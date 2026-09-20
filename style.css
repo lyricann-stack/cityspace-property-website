@@ -107,6 +107,16 @@ nav a.active, nav a:hover { color: var(--brand); }
 }
 .btn-secondary:hover { background: var(--bg-soft); text-decoration: none; }
 
+.hero-image {
+  width: 100%;
+  max-width: 900px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 40px auto 0;
+  display: block;
+}
+
 section.page {
   padding: 56px 0;
 }
@@ -135,6 +145,14 @@ section.page .lead {
   padding: 28px;
 }
 
+.card img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
 .card h3 {
   color: var(--brand-dark);
   margin-top: 0;
@@ -142,6 +160,29 @@ section.page .lead {
 }
 
 .card p { color: var(--text-muted); font-size: 15px; margin-bottom: 0; }
+
+.photo-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.photo-row img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.photo-single {
+  width: 100%;
+  max-width: 640px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
 
 .steps {
   list-style: none;
@@ -224,4 +265,5 @@ footer.site-footer .container {
   .steps { grid-template-columns: 1fr 1fr; }
   .contact-block { grid-template-columns: 1fr; }
   .hero h1 { font-size: 26px; }
+  .photo-row { grid-template-columns: 1fr; }
 }
